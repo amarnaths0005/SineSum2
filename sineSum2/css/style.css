@@ -1,0 +1,42 @@
+/* CSS accompanying the HTML to compute the Sum of Sines. 
+    Written by Amarnath S, aka Avijnata, Dec 2018
+     amarnaths.codeproject@gmail.com */
+* {
+    font-family: Arial, Verdana, sans-serif;
+    color: #665544;
+    text-align: center;
+    min-width: 700;
+}
+
+.selected {
+    background-color: lightblue;
+    color: #FFFFFF;
+}
+
+.pointerClass { 
+    cursor: pointer;
+}
+
+canvas {
+  border: 2px solid blue;
+}
+
+td.blank {
+    visibility: hidden;
+}
+
+section {
+  float: left;
+  width: 33%;
+  min-width: 300;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
