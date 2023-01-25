@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Sum of Sines</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <script src="js/jquery-3.0.0.min.js"></script>
+  <script src="js/script.js"></script>
+  <!-- HTML to compute the Sum of Sines. 
+    Written by Amarnath S, aka Avijnata, Dec 2018
+    amarnaths.codeproject@gmail.com   -->
+</head>
+<body>
+    <h1>
+        Sum of Sines
+    </h1>
+    <header >
+        <table>
+            <tr>
+                <td> Harmonic Number </td>
+                <td> 
+                    <select id="opHarmonic">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </td>
+                <td class="blank">Blank</td>
+                <td> Amplitude </td>
+                <td> <input type="range" id="raAmpl" min=0.01 max=10 step="0.01" 
+                     value=1.0> </td>
+                <td> <output id="opAmpl">1.00</output> </td>
+                <td class="blank">Blank</td>
+                <td>  Phase </td>
+                <td> <input type="range" id="raPhase" min=0.0 max=6.29 step="0.01" 
+                     value=0.0> </td>
+                <td> <output id="opPhase">0.10</output> </td>
+                <td class="blank">Blank</td>
+                <td> <button id="bnSound">Play Sound</button> </td>
+                <td class="blank">Blank</td>
+                <td> <button id="bnReset">Reset Values</button> </td>
+            </tr>
+        </table>
+    </header>
+    <hr />
+    <p> Click on a table entry below and change its amplitude and phase 
+        using the controls above.</p>
+    <hr />
+        <table id="tblHarmonic" class = "pointerClass">
+            <thead class="thead">
+                <th id="tharmo">Harmonic No.</th>
+                <th id="tamp">Amplitude</th>
+                <th id="tphase">Phase</th>
+            </thead>
+            <tr id="tr1">
+                <th>1</th>
+                <td id="ta1">1.0</td>
+                <td id="tp1">0.0</td>
+            </tr>
+            <tr class="even" id="tr2">
+                <th>2</th>
+                <td id="ta2">0.01</td>
+                <td id="tp2">0.0</td>
+            </tr>
+            <tr id="tr3">
+                <th>3</th>
+                <td id="ta3">0.01</td>
+                <td id="tp3">0.0</td>
+            </tr>
+            <tr class="even" id="tr4">
+                <th>4</th>
+                <td id="ta4">0.01</td>
+                <td id="tp4">0.0</td>
+            </tr>
+            <tr id="tr5">
+                <th>5</th>
+                <td id="ta5">0.01</td>
+                <td id="tp5">0.0</td>
+            </tr>
+            <tr class="even" id="tr6">
+                <th>6</th>
+                <td id="ta6">0.01</td>
+                <td id="tp6">0.0</td>
+            </tr>
+            <tr id="tr7">
+                <th>7</th>
+                <td id="ta7">0.01</td>
+                <td id="tp7">0.0</td>
+            </tr>
+            <tr class="even" id="tr8">
+                <th>8</th>
+                <td id="ta8">0.01</td>
+                <td id="tp8">0.0</td>
+            </tr>
+            <tr id="tr9">
+                <th>9</th>
+                <td id="ta9">0.01</td>
+                <td id="tp9">0.0</td>
+            </tr>
+            <tr class="even" id="tr10">
+                <th>10</th>
+                <td id="ta10">0.01</td>
+                <td id="tp10">0.0</td>
+            </tr>
+        </table>
+    <p></p>
+    <hr />
+    <section class="graph">
+        <canvas width="320" height="240" id="canvas03" >
+            Your browser does not support canvas.
+        </canvas>
+    </section>
+    <section class="graph">
+        <canvas width="320" height="240" id="canvas01" >
+            Your browser does not support canvas.
+        </canvas>
+    </section>
+    <section class="graph">
+        <canvas width="320" height="240" id="canvas02" >
+            Your browser does not support canvas.
+        </canvas>
+    </section>
+</body>
+</html>
